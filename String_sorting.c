@@ -2,17 +2,20 @@
 #include <string.h>
 int main()
 {
-    char a[202][202],dup[202];
-    int n,i,j,che;
-    printf("Enter total number of inputs: ");
-    scanf("%d",&n);
-    while((getchar())!='\n');
-    for(i=0;i<n;i++)
+    char a[202][202],dup[202],b;
+    int n = 0,i,j,che;
+    do
     {
-        printf("Enter the string: ");
-        fgets(a[i],sizeof(a[i]),stdin);
-    }
-    i = 0;
+        printf("Enter here: ");
+        fgets(a[n],sizeof(a[n]),stdin);
+        n++;
+        printf("Do you want to enter again(y/n): ");
+        scanf(" %c",&b);
+        while((getchar())!='\n');
+    }while(b=='y'||b=='Y');
+                             //Note that we use fgets function instead of gets because of certain vulnerabilities
+                            //Syntax: fgets(array_name,sizeof(array_name),stdin);
+    i = 0
     while(i<n-1)
     {
         j = i;

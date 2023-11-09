@@ -15,7 +15,7 @@ int main()
     }while(b=='y'||b=='Y');
                              //Note that we use fgets function instead of gets because of certain vulnerabilities
                             //Syntax: fgets(array_name,sizeof(array_name),stdin);
-    i = 0
+    i = 0;
     while(i<n-1)
     {
         j = i;

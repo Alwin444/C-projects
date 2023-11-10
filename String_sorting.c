@@ -11,7 +11,7 @@ int main()
         n++;
         printf("Do you want to enter again(y/n): ");
         scanf(" %c",&b);
-        while((getchar())!='\n');
+        while((getchar())!='\n'); //To avoid input buffer
     }while(b=='y'||b=='Y');
                              //Note that we use fgets function instead of gets because of certain vulnerabilities
                             //Syntax: fgets(array_name,sizeof(array_name),stdin);

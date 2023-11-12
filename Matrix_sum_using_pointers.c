@@ -2,8 +2,10 @@
 int main()
 {
     int a[202][202],b[202][202],ro,co,*p1,*p2,i,j;
-    printf("Enter the order[ROW x COLUMN]: ");
-    scanf("%d %d",&ro,&co);
+    printf("Enter the row: ");
+    scanf("%d",&ro);
+    printf("Enter the column: ");
+    scanf("%d",&co);
     p1 = &a[0][0];
     p2 = &b[0][0];
     for(i=0;i<ro;i++)
@@ -11,7 +13,7 @@ int main()
         for(j=0;j<co;j++)
         {
             printf("Enter the element for first matrix[ROWISE]: ");
-            scanf("%d",(p1+i*co+j));
+            scanf("%d",(p1+i*co+j)); // Here co is the offset of i'th row (same for all)
         }
     }
     for(i=0;i<ro;i++)
@@ -35,3 +37,4 @@ int main()
     }
     return 0;
 }
+// Using pointer

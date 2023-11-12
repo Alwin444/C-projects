@@ -29,7 +29,7 @@ int main()
         for(j=0;j<co;j++)
         {
            if(j==co-1)
-            printf("%d",*(p1+i*co+j)+*(p2+i*co+j));
+            printf("%d",*(p1+i*co+j)+*(p2+i*co+j));// Sum of co-1 in 2D array 'a' and 'b'  will be displayed.
            else
             printf("%d\t",*(p1+i*co+j)+*(p2+i*co+j));
         }
@@ -37,4 +37,5 @@ int main()
     }
     return 0;
 }
-// Using pointer
+// Using pointer we can acceses the elements in array more efficiently with speedy manner.
+// At first these concepts may be complex but pratice and assistance anyone can understand the concept throughly which helps to write a neat code

@@ -1,3 +1,4 @@
+// We can use same variable in functions do not care about it.
 #include <stdio.h>
 int reverse(int *p1);
 int sums(int *p1);
@@ -34,6 +35,5 @@ int sums(int *p1)
         rev = rev+mod;
         *p1 = *p1/10;
     }
-    return rev;
-    
+    return rev;  
 }

@@ -9,7 +9,7 @@ int main()
     };
     union stud s1;
     printf("Enter the name: ");
-    scanf("%s",&s1.name);
+    scanf("%s",s1.name);
     printf("\nThe name is %s",s1.name);
     printf("\nEnter the class no: ");
     scanf("%d",&s1.a);

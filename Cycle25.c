@@ -3,7 +3,7 @@ int myfun(int x);
 int main()
 {
     int a,ans;
-    printf("Enter the terms: ");
+    printf("Enter the number: ");
     scanf("%d",&a);
     ans = myfun(a);
     printf("The %d! = %d",a,ans);
